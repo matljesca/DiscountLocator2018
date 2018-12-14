@@ -1,10 +1,10 @@
 package com.air.ws.webservice.responses;
 
 public class AirWebServiceResponse {
-    private int responseId;
-    private String responseText;
-    private long timeStamp;
-    private String items;
+    static public int responseId;
+    static public String responseText;
+    static public long timeStamp;
+    static public String items;
 
     public int getResponseId() {
         return responseId;
