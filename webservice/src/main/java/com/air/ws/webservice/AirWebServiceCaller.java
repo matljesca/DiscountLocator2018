@@ -7,6 +7,7 @@ import com.squareup.okhttp.OkHttpClient;
 
 import java.lang.reflect.Type;
 import java.util.Arrays;
+import java.util.logging.Logger;
 
 import air18.foi.hr.database.entities.Discount;
 import air18.foi.hr.database.entities.Store;
@@ -68,12 +69,12 @@ public class AirWebServiceCaller {
                             }
                         }
                     } catch (Exception ex) {
-                        ex.printStackTrace();
+                        Logger.getLogger("context", String.valueOf(ex));;
                     }
                 }
                 @Override
                 public void onFailure(Throwable t) {
-                    t.printStackTrace();
+                    Logger.getLogger("context", String.valueOf(t));;
                 }
             });
         }
